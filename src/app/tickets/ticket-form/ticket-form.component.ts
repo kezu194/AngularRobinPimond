@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { TicketService } from '../../../services/ticket/ticket.service';
-import { Ticket } from '../../../models/ticket';
+import { Ticket, Major } from '../../../models/ticket';
 
 @Component({
   selector: 'app-ticket-form',
@@ -17,6 +17,7 @@ export class TicketFormComponent implements OnInit {
    * More information about Reactive Forms: https://angular.io/guide/reactive-forms
    */
   public ticketForm: FormGroup;
+  public MAJOR_LIST: string[] = Object.values(Major);
 
   constructor(public formBuilder: FormBuilder, public ticketService: TicketService) {
     // Form creation

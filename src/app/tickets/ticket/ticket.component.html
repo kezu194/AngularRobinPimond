@@ -2,8 +2,8 @@
   <!-- we use the {{ }} syntax to display the data, more info: https://angular.io/guide/displaying-data-->
   <h3>Titre: {{ticket.title}}</h3>
   <i *ngIf="ticket.major === 'national'" class="fas fa-flag"></i>
-  <i *ngIf="ticket.major === 'international'" class="fas fa-globe"></i>  {{ticket.major}}
-  <i class="fas fa-calendar-alt"></i> {{ticket.date | date: 'shortTime'}} &nbsp;&nbsp;
-  <i class="far fa-user"></i> {{ticket.author}}
+  <i *ngIf="ticket.major === 'international'" class="fas fa-globe"></i>  {{ticket.major}} <br>
+  <i class="fas fa-calendar-alt"></i> {{ticket.date | date: 'shortTime'}} &nbsp;&nbsp; <br>
+  <i class="far fa-user"></i> {{ticket.author}} <br>
   <button type="submit" (click)="deleteTicket(ticket)">Delete</button>
 </div>
