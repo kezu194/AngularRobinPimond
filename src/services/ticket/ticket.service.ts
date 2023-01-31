@@ -37,7 +37,8 @@ export class TicketService {
          && element.date === ticket.date  // This attribute assure us to only delete the exact ticket
          && element.description === ticket.description 
          && element.major === ticket.major){
-          this.ticketList.splice(index, 1);
+          // this.ticketList.splice(index, 1); 
+          this.ticketList[index].archived = true;
       }
     })
   }

@@ -1,7 +1,11 @@
 <div class="ticket-list">
+  <button type="submit" (click)="displayTicket()" *ngIf="displayTicketArchived"> Hide archived ticket</button>
+  <button type="submit" (click)="displayTicket()" *ngIf="!displayTicketArchived"> Show archived ticket</button>
+
   <div class="ticket" *ngFor="let ticket of ticketList">
       <!--Inputs & Output allow communication between parent & child components.-->
       <!--More information: https://angular.io/guide/component-interaction-->
-      <app-ticket [ticket]="ticket" (ticketHasBeenSelected)="ticketHasBeenSelected($event)" (deleteThisTicket)="deleteThisTicket($event)"></app-ticket>
+      <app-ticket [ticket]="ticket" (ticketHasBeenSelected)="ticketHasBeenSelected($event)" (deleteThisTicket)="deleteThisTicket($event)" 
+      *ngIf="displayTicketArchived || !ticket.archived"></app-ticket>
   </div>
 </div>

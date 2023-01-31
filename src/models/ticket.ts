@@ -9,4 +9,5 @@ export interface Ticket {
   date?: Date;
   author?: string;
   major?: Major;
+  archived: boolean;
 }
