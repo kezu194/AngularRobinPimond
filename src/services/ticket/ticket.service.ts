@@ -33,7 +33,7 @@ export class TicketService {
   deleteTicket(ticket: Ticket){
     this.ticketList.forEach((element, index)=>{
       if(element.title === ticket.title
-         && element.author === ticket.author 
+         && element.student === ticket.student 
          && element.date === ticket.date  // This attribute assure us to only delete the exact ticket
          && element.description === ticket.description 
          && element.major === ticket.major){

@@ -4,6 +4,6 @@
   <i *ngIf="ticket.major === 'national'" class="fas fa-flag"></i>
   <i *ngIf="ticket.major === 'international'" class="fas fa-globe"></i>  {{ticket.major}} <br>
   <i class="fas fa-calendar-alt"></i> {{ticket.date | date: 'shortTime'}} &nbsp;&nbsp; <br>
-  <i class="far fa-user"></i> {{ticket.author}} <br>
+  <i class="far fa-user"></i> {{ticket.student}} <br>
   <button type="submit" (click)="deleteTicket(ticket)">Delete</button>
 </div>
