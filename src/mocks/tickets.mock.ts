@@ -1,4 +1,5 @@
 import { Ticket, Major } from '../models/ticket';
+import { STUDENTS_MOCKED } from './students.mock';
 
 const dateToday: Date = new Date();
 
@@ -7,7 +8,7 @@ export const TICKETS_MOCKED: Ticket[] = [
     title: 'SI4 in Barcelone',
     description: '',
     date: dateToday,
-    student: 'Paul',
+    student: STUDENTS_MOCKED[0],
     major: Major.INTERNATIONAL,
     archived: false
   },
@@ -15,7 +16,7 @@ export const TICKETS_MOCKED: Ticket[] = [
     title: 'SI5 in Paris',
     description: 'Description du voyage',
     date: dateToday,
-    student: 'Anakin',
+    student: STUDENTS_MOCKED[1],
     major: Major.NATIONAL,
     archived: false
   },
@@ -23,7 +24,7 @@ export const TICKETS_MOCKED: Ticket[] = [
     title: 'SI6 in London',
     description: 'Trajet en train',
     date: dateToday,
-    student: 'Luke',
+    student: STUDENTS_MOCKED[2],
     major: Major.INTERNATIONAL,
     archived: true
   },
