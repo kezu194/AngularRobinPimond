@@ -27,7 +27,7 @@ export class TicketListComponent implements OnInit {
     this.ticketService.deleteTicket(ticket);
   }
 
-  displayTicket(){
+  displayTickets(){
     this.displayTicketArchived = !this.displayTicketArchived;
   }
 
