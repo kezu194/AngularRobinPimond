@@ -44,8 +44,6 @@ export class TicketFormComponent implements OnInit {
   addTicket() {
     const ticketToCreate: Ticket = this.ticketForm.getRawValue() as Ticket;
     ticketToCreate.date = new Date();
-    console.log(ticketToCreate);
-    console.log(ticketToCreate.student);
     ticketToCreate.archived = false;
     this.ticketService.addTicket(ticketToCreate);
   }
