@@ -14,7 +14,7 @@
     Major <br>
     <!-- <input class="input-custom" type="text" id="major" [formControlName]="'major'"> -->
     <select [formControlName]="'major'">
-      <option *ngFor="let major of MAJOR_LIST" [value]="major"> 
+      <option *ngFor="let major of MAJOR_LIST" [value]="major" aria-required="true"> 
         {{major}}
       </option>
     </select>
@@ -23,7 +23,7 @@
   <label for="studentId">
     Student <br>
     <select [formControlName]="'student'">
-      <option *ngFor="let student of student_list" [ngValue]="student">
+      <option *ngFor="let student of student_list" [ngValue]="student" aria-required="true">
         {{student.id}} - {{student.prenom}} {{student.nom}}
       </option>
     </select>

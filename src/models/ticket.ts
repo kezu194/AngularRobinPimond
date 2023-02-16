@@ -1,15 +1,15 @@
 import { Student } from "./student";
 
 export enum Major {
-  NATIONAL = "national",
-  INTERNATIONAL = "international"
+  INFORMATIQUE = "informatique",
+  BIGDATA = "big data"
 }
 
 export interface Ticket {
   title?: string;
   description?: string;
   date?: Date;
-  student?: Student;
-  major?: Major;
+  student: Student;
+  major: Major;
   archived: boolean;
 }

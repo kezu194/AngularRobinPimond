@@ -9,7 +9,7 @@ export const TICKETS_MOCKED: Ticket[] = [
     description: '',
     date: dateToday,
     student: STUDENTS_MOCKED[0],
-    major: Major.INTERNATIONAL,
+    major: Major.INFORMATIQUE,
     archived: false
   },
   {
@@ -17,7 +17,7 @@ export const TICKETS_MOCKED: Ticket[] = [
     description: 'Description du voyage',
     date: dateToday,
     student: STUDENTS_MOCKED[1],
-    major: Major.NATIONAL,
+    major: Major.BIGDATA,
     archived: false
   },
   {
@@ -25,7 +25,7 @@ export const TICKETS_MOCKED: Ticket[] = [
     description: 'Trajet en train',
     date: dateToday,
     student: STUDENTS_MOCKED[2],
-    major: Major.INTERNATIONAL,
+    major: Major.INFORMATIQUE,
     archived: true
   },
 ];
